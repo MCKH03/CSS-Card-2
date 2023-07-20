@@ -6,7 +6,9 @@ const subscribe = document.querySelector(".subscribe");
 const reloadMessage = document.querySelector(".reload");
 const confirm = document.querySelector(".confirm");
 
-btn.addEventListener("click", function () {
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+
   btnBox.classList.add("btn-box-change");
   btn.classList.add("btn-change");
   subscribe.textContent = "Read the message!";
